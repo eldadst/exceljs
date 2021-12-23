@@ -18,7 +18,7 @@ We strongly recommend using this way, because it's 20% faster than any other and
 
 ``` js
 const workbook = new ExcelJS.stream.xlsx.WorkbookReader('./file.xlsx');
-for await (const worksheetReader of workbookReader) {
+for await (const worksheetReader of workbook) {
   for await (const row of worksheetReader) {
     // ...
 
